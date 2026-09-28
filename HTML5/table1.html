@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping columns using colgroup</title>
+    <style>
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 30px auto;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 12 px;
+            text-align: center;
+        }
+
+        th {
+            background-color: pin;
+            color: black;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1><i>Student Marks</i></h1>
+    <table>
+        <!--Grouping Columns-->
+        <colgroup>
+            <col style="background-color: lightblue;">
+
+            <col span="1" style="background-color: lightgreen;">
+
+            <col style="background-color: lightpink;">
+             <col style="background-color:yellow ;">
+        </colgroup>
+        <!-- Table Heading -->
+        <tr>
+            <th>Student Name</th>
+            <th>English</th>
+            <th>Science</th>
+            <th>Mathematics</th>
+        </tr>
+        <!-- Row 1-->
+        <tr>
+            <td>Anjali</td>
+            <td>85</td>
+            <td>90</td>
+            <td>95</td>
+        </tr>
+        <!-- Row 2-->
+        <tr>
+            <td>Rahul</td>
+            <td>78</td>
+            <td>90</td>
+            <td>95</td>
+            <!--Row 3-->
+        <tr>
+            <td>Devansh</td>
+            <td>70</td>
+            <td>75</td>
+            <td>80</td>
+        </tr>
+
+    </table>
+</body>
+
+</html>
