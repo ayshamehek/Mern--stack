@@ -17,11 +17,11 @@
     enctype="multipart/form-data"
     autocomplete="on"
     novalidate>
-    <feildset>
+    <fieldset>
         <legend>Personal Information</legend>
         <p> 
-            <label for="firstName">First Name</label>
-            <input type="text" id="firstName" name="firstName" placeholder="enter your firstName"
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Enter your firstName"
                  required 
                  minlength="2"
                 maxlength="50"
@@ -34,12 +34,12 @@
 </p>
 <p>
     <label for="username">Username:</label>
-    <input type="text" id="useername" name="username" placeholder="enter username"
+    <input type="text" id="useername" name="username" placeholder="Enter username"
     required minlength="4" maxlength="20">
 </p>
 <p>
     <label for="password">Password:</label>
-    <input type="password" id="password" name="password" placeholder="enter password"
+    <input type="password" id="password" name="password" placeholder="Enter password"
     required minlength="8" maxlength="30" autocomplete="new-password">
 </p>
 <p> 
@@ -49,16 +49,17 @@
 </p>
 <p>
     <label for="email">Email Address:</label>
-    <input type="email" id="email" name="email" placeholder="example@gmail.com"
+    <input type="email" id="email" name="email" placeholder="Example@gmail.com"
     required autocomplete="email">
 </p>
 <p>
-    <input type="tel" id="phone" name="phone" placeholder="enter phone number"
+    <label for="phone number">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" placeholder="Enter phone number"
     required autocomplete="tel">
 </p>
 <p>
 <label for="search">Search:</label>
-|<input type="search" id="search" name="search" placeholder="search something">
+<input type="search" id="search" name="search" placeholder="Search something">
 </p>
 <p>
     <label for=""website">Personal Website:</label>
@@ -66,25 +67,25 @@
 </p>
 <p>
     <label for ="age">Age:</label>
-    <input type="number" id="age" min="1" max="100" step="1" placeholder="enter your age">
+    <input type="number" id="age" min="1" max="100" step="1"  placeholder="enter your age">
 </p>
-    </feildset>
+    </fieldset>
     <br>
-<feildset>
+<fieldset>
  <legend>Gender</legend>
  <p>Select your gender:</p>
  <input type="radio" id="male" name="gender" value="male">
  <label for="male">Male:</label>
  <br>
 <input type="radio" id="female" name="gender" value="female">
- <label for="Female">FeMale:</label>
+ <label for="Female">Female:</label>
  <br>
   <input type="radio" id="other" name="gender" value="other">
 <label for="other">Others:</label>
 <br>
 <input type="radio" id="prefernot" name="gender" value="prefer-not-to-say">
-<label for="perfernot">prefer not to say</label>
-</feildset>
+<label for="perfernot">Prefer not to say</label>
+</fieldset>
 <br>
 <fieldset>
 <legend>Date and time information</legend>
@@ -101,14 +102,15 @@
     <input type="time" id="appointmentTime" name="appointmentTime">
 </p>
 <p>
+    <label for="joiningmonth">Joining Month:</label>
     <input type="month" id="joiningmonth" namr="joiningmonth">
 </p>
 <p>
-    <lable for="week"> select week:</lable>
+    <lable for="week"> Select week:</lable>
     <input type="week" id="week" name="week">
 </p>
 <p>
-    <lable for="meeting"> meeting Date and time:</lable>
+    <lable for="meeting"> Meeting Date and time:</lable>
     <input type="datatime-local" id="meeting" name="meeting">
 </p>
     </feildset>
@@ -118,20 +120,20 @@
         <p>
         <lable for="address">Full Address:</lable>
             <br>
-            <textarea id="address" name="address" rows="5" cols="50" placeholder="Enter your complente address" maxlength="300"></textarea>
+            <textarea id="address" name="address" rows="5" cols="50" placeholder="Enter your complete address" maxlength="300"></textarea>
  </p>
  <p>
-    <lable for="state">state:</lable>
-    <input type="text" id="state" name="state" placeholder="enter state">
+    <lable for="state">State:</lable>
+    <input type="text" id="state" name="state" placeholder="Enter state">
  </p>
  <p>
-    <label for="pincode">PIN CODE:</label>
-    <input type="text" id="pincode" name="pincode" placeholder="enter PIN Code"
+    <label for="pincode">PIN Code:</label>
+    <input type="text" id="pincode" name="pincode" placeholder="Enter PIN Code"
     maxlength="6">
  </p>
  <p>
     <label for="country">Country:</label>
-    <input list="countries" id="country" name="country" placeholder="choose or type country">
+    <input list="countries" id="country" name="country" placeholder="Choose or type country">
     <datalist id="countries">
         <option value="India">
         <option value="United States">
@@ -203,9 +205,9 @@
         </P>
     </fieldset>
 <br>
-<feldset>
+<fieldset>
     <legend>Interests</legend>
-    <p> Select your intrests:</p>
+    <p> Select your Intrests:</p>
         <input type="checkbox" id="coding">
         <label for="coding">Coding</label>
         <br>
@@ -217,7 +219,7 @@
         <br>
         <input type="checkbox" id="travel" name="intrest" value="travel">
         <label for="Music">Music</label>
-</feldset>
+</fieldset>
 <br>
 <fieldset>
     <legend>Range Input</legend>
@@ -230,15 +232,15 @@
 <input type="range"
 id="satisfaction" name="satisfaction" min="0" max="100" step="10" value="50">
 </p>    
-    </feildset>
+    </fieldset>
     <br>
-    <feildset>
+    <fieldset>
         <legend>Color Selection</legend>
         <p>
             <label for="favoritecolor">Favorite Color:</label>
             <input type="color" id="favoritecolor" name="favoritecolor" value="#000000">
         </p>
-    </feildset>
+    </fieldset>
     <br>
     <fieldset>
         <legend>File Upload</legend>
@@ -267,12 +269,12 @@ minlength="20" maxlength="1000"></textarea>
     <label for="feedback" name="feedback" rows-="6" cols="60" placeholder="Enter your feedback"></label>
 </p>
     </fieldset>
-    <feildset>
+    <fieldset>
         <legend>Programming Language</legend>
         <p>
             <label for="language">Choose Programming Language:</label>
         <input type="text" id="language" name="language" list="languages"
-        placeholder="start typing...">
+        placeholder="Start Typing...">
         <datalist id="languages">
             <option value="HTML">
             <option value="CSS">
@@ -286,7 +288,7 @@ minlength="20" maxlength="1000"></textarea>
             <option value="Rust">
         </datalist>
         </p>
-    </feildset>
+    </fieldset>
     <br>
     <fieldset>
     <legend>Numeric Information</legend>
@@ -313,17 +315,17 @@ minlength="20" maxlength="1000"></textarea>
         <p>70 out of 100</p>
     </fieldset>
     <br>
-    <feildset>
+    <fieldset>
         <legend>Progress Example</legend>
         <p>Profile Completion:</p>
         <progress>Progress value="70" max="100">70%</progress>
         <p>
             70% completed
         </p>
-    </feildset>
+    </fieldset>
     <br>
     <input type="hidden" name="formtype" value="StudentRegistration">
-     <feidset>
+     <fieldset>
         <legend>Readonly and Disabled Fields</legend>
         <p>
             <label for="studentId">StudentId:</label>
@@ -333,16 +335,16 @@ minlength="20" maxlength="1000"></textarea>
             <label for="disabledField">Disabled Field:</label>
             <input type="text" id="disabledfield" name="disabledfield" value="This field is disabled" Disabled>
         </p>
-     </feidset>
+     </fieldset>
      <br>
-     <fiedset>
+     <fieldset>
         <legend>Terms and conditions</legend>
         <input type="checkbox" id="terms" name="terms" value="accepted" required>
         <label for="terms"> I Agree to the Terms and Conditions.</label>
         <br><br>
         <input type="checkbox" id="privacy" name="privacy" value="accepted" required>
         <label for="privacy"> I agree to the Privacy Policy.</label>
-        </fiedset>
+        </fielfdset>
         <br>
         <fieldset>
             <legend>For Buttons</legend>
@@ -357,7 +359,7 @@ minlength="20" maxlength="1000"></textarea>
         <br>
         <fieldset>
             <legend>Image Submit Button</legend>
-            <p>Image input can also be used as asubmit button.</p>
+            <p>Image input can also be used as a submit button.</p>
              <input type="image" src="Submit-button.png" alt="submit" width="120" height="40">
         </fieldset>
         <br>

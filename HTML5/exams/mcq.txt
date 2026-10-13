@@ -1,0 +1,5 @@
+1. option-C <h1>
+2. option-C < ahref>
+3. option-D <img>
+4. option-C <tr>
+5. option-B <inputbox>
